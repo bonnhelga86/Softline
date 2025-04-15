@@ -1,0 +1,9 @@
+.page {
+  font-family: "ProximaNovaCond", Arial, sans-serif;
+  max-width: 1250px;
+  color: #444;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

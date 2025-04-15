@@ -1,0 +1,211 @@
+.offices {
+  position: relative;
+  margin-bottom: 95px;
+
+  @media (max-width: 1297px) {
+    margin: 0 15px 8px;
+  }
+
+  .offices__active {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 28px 70px 0;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+
+    @media (max-width: 1170px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @media (max-width: 1040px) {
+      gap: 17px;
+      padding: 18px 5px 0;
+    }
+
+    @media (max-width: 630px) {
+      margin-bottom: 0;
+    }
+
+    .offices__button {
+      font-family: "ProximaNovaCond", Arial, sans-serif;
+      height: fit-content;
+      display: flex;
+      gap: 16px;
+      padding: 0;
+      border: none;
+      background-color: inherit;
+      font-size: 24px;
+      line-height: 100%;
+      font-weight: 600;
+      color: #444;
+      cursor: pointer;
+
+      @media (max-width: 630px) {
+        gap: 6px;
+        font-size: 20px;
+      }
+
+      .offices__icon {
+        display: block;
+        height: 12px;
+        width: 24px;
+        background-image: url("../../images/icon-close.svg");
+        background-repeat: no-repeat;
+        align-self: center;
+
+        @media (max-width: 630px) {
+          background-image: url("../../images/icon-close-sm.svg");
+        }
+
+        @media (max-width: 630px) {
+          height: 10px;
+          width: 22px;
+        }
+      }
+
+      .offices__icon_open {
+        background-image: url("../../images/icon-open.svg");
+
+        @media (max-width: 630px) {
+          background-image: url("../../images/icon-open-sm.svg");
+        }
+      }
+    }
+
+    .offices__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      gap: 30px;
+
+      @media (max-width: 1040px) {
+        gap: 17px;
+      }
+
+      .offices__item {
+        padding-bottom: 28px;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        white-space: nowrap;
+        cursor: pointer;
+
+        @media (max-width: 1040px) {
+          padding-bottom: 20px;
+        }
+
+        @media (max-width: 630px) {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      .offices__item_active {
+        border-bottom: 3px solid #a30c33;
+        color: #a30c33;
+      }
+
+      .offices__item:hover {
+        color: #a30c33;
+      }
+    }
+  }
+
+  .offices__dropdown-menu {
+    position: absolute;
+    width: 100%;
+    display: none;
+    grid-template-columns: repeat(8, auto);
+    gap: 24px;
+    margin: 0 auto;
+    padding: 30px 70px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+
+    @media (max-width: 1040px) {
+      padding: 18px 5px;
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(4, auto);
+    }
+
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(3, auto);
+    }
+
+    .offices__dropdown-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .offices__dropdown-item {
+      font-size: 18px;
+      line-height: 20px;
+
+      @media (max-width: 1040px) {
+        display: none;
+      }
+    }
+
+    .offices__dropdown-list_opened > .offices__dropdown-item {
+      display: flex;
+    }
+
+    .offices__dropdown-item:first-child {
+      display: flex;
+      align-items: baseline;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .offices__dropdown-list_opened > .offices__dropdown-item:first-child {
+      color: #a30c33;
+    }
+
+    .offices__dropdown-item:first-child::after {
+      @media (max-width: 1040px) {
+        content: "";
+        width: 8px;
+        height: 7px;
+        display: block;
+        background-image: url("../../images/icon-submenu-close.svg");
+        background-repeat: no-repeat;
+        margin-left: 3px;
+      }
+    }
+
+    .offices__dropdown-list_opened
+      > .offices__dropdown-item:first-child::after {
+      @media (max-width: 1040px) {
+        background-image: url("../../images/icon-submenu-open.svg");
+      }
+    }
+  }
+
+  .offices__dropdown-menu_active {
+    display: grid;
+  }
+
+  .offices__map-container {
+    padding: 68px 30px 0;
+
+    @media (max-width: 630px) {
+      padding: 0;
+    }
+
+    .offices__map {
+      @media (max-width: 630px) {
+        height: 398px;
+        padding-top: 10px;
+      }
+    }
+  }
+}

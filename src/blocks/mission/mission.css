@@ -1,0 +1,72 @@
+.mission {
+  position: relative;
+  margin-bottom: 100px;
+  padding: 139px 72px 140px 68px;
+  background-color: #cb0f41;
+  text-align: center;
+  color: #fff;
+
+  @media (max-width: 740px) {
+    margin: 0 15px 50px;
+    padding: 32px 5px;
+    min-height: 121.2px;
+  }
+
+  .mission__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 56px;
+    line-height: 100%;
+    font-weight: 600;
+
+    @media (max-width: 740px) {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .mission__text {
+    margin: 0;
+    font-size: 32px;
+    line-height: 150%;
+
+    @media (max-width: 740px) {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  .mission__bg {
+    position: absolute;
+    top: 47px;
+    width: 300px;
+    height: 377px;
+
+    @media (max-width: 740px) {
+      height: 155px;
+      width: 108px;
+      top: 10px;
+    }
+  }
+
+  .mission__bg_left {
+    background-image: url("../../images/bg-left.png");
+    background-repeat: no-repeat;
+    left: 0;
+
+    @media (max-width: 740px) {
+      background-image: url("../../images/bg-sm-left.png");
+    }
+  }
+
+  .mission__bg_right {
+    background-image: url("../../images/bg-right.png");
+    background-repeat: no-repeat;
+    right: -4px;
+
+    @media (max-width: 740px) {
+      background-image: url("../../images/bg-sm-right.png");
+      right: 0;
+    }
+  }
+}

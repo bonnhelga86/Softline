@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Softline</title>
+  </head>
+  <body class="page">
+    
+    <!-- Начало блока Header -->
+    <header class="header">
+      <img src="<%=require('./src/images/logo.svg')%>" alt="Логотип Softline" class="logo" />
+      <ul class="header__list">
+        <li class="header__item">Облачные&nbsp;решения</li>
+        <li class="header__item">Кибербезопасность</li>
+        <li class="header__item">Импортозамещение</li>
+        <li class="header__item">Цифровая&nbsp;трансформация</li>
+      </ul>
+    </header>
+    <!-- Конец блока Header -->
+
+    <!-- Начало блока Main -->
+    <main class="content">
+      <!--Начало секции Lead -->
+      <section class="lead">
+        <h1 class="lead__title">Softline</h1>
+        <p class="lead__subtitle">
+          Ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные
+          IT-решения, облака, программное и аппаратное обеспечение, решения
+          по цифровой трансформации и кибербезопасности, а также широкий спектр
+          IT-услуг.
+        </p>
+        <ul class="lead__list">
+          <li class="lead__item">
+            <p class="lead__statistic">> 30 лет</p>
+            <p class="lead__text">на IT-рынке</p>
+          </li>
+          <li class="lead__item">
+            <p class="lead__statistic">4600</p>
+            <p class="lead__text">сотрудников в России</p>
+          </li>
+          <li class="lead__item">
+            <p class="lead__statistic">25</p>
+            <p class="lead__text">городов России</p>
+          </li>
+          <li class="lead__item">
+            <p class="lead__statistic">2000+</p>
+            <p class="lead__text">разработчиков</p>
+          </li>
+          <li class="lead__item">
+            <p class="lead__statistic">3000+</p>
+            <p class="lead__text">сотрудников ежегодно проходят оценку и обучение</p>
+          </li>
+        </ul>
+      </section>
+      <!--Конец секции Lead -->
+
+      <!--Начало секции Offices -->
+      <section class="offices">
+        <div class="offices__active">
+          <button class="offices__button">
+            Офисы Softline
+            <span class="offices__icon"></span>
+          </button>
+          <ul class="offices__list">
+            <li class="offices__item offices__item_active" data="map-all">Все</li>
+            <li class="offices__item" data="map-moskow">Москва</li>
+            <li class="offices__item" data="map-center">Центр</li>
+            <li class="offices__item" data="map-northwest">Северо-Запад</li>
+            <li class="offices__item" data="map-south">Юг</li>
+            <li class="offices__item" data="map-volga">Волга</li>
+            <li class="offices__item" data="map-ural">Урал</li>
+            <li class="offices__item" data="map-siberia">Сибирь</li>
+            <li class="offices__item" data="map-east">Дальний восток</li>
+          </ul>
+        </div>
+        <div class="offices__dropdown-menu">
+          <ul class="offices__dropdown-list">
+            <li class="offices__dropdown-item">Москва</li>
+          </ul>
+          <ul class="offices__dropdown-list">
+            <li class="offices__dropdown-item">Центр</li>
+            <li class="offices__dropdown-item">Воронеж</li>
+            <li class="offices__dropdown-item">Ярославль</li>
+            <li class="offices__dropdown-item">Белгород</li>
+          </ul>
+          <ul class="offices__dropdown-list">
+            <li class="offices__dropdown-item">Северо-Запад</li>
+            <li class="offices__dropdown-item">Санкт-Петербург</li>
+            <li class="offices__dropdown-item">Калининград</li>
+          </ul>
+          <ul class="offices__dropdown-list">
+            <li class="offices__dropdown-item">Юг</li>
+            <li class="offices__dropdown-item">Ростов-на-Дону</li>
+            <li class="offices__dropdown-item">Краснодар</li>
+            <li class="offices__dropdown-item">Волгоград</li>
+          </ul>
+          <ul class="offices__dropdown-list">
+            <li class="offices__dropdown-item">Волга</li>
+            <li class="offices__dropdown-item">Казань</li>
+            <li class="offices__dropdown-item">Самара</li>
+            <li class="offices__dropdown-item">Уфа</li>
+            <li class="offices__dropdown-item">Оренбург</li>
+            <li class="offices__dropdown-item">Нижний Новгород</li>
+          </ul>
+          <ul class="offices__dropdown-list">
+            <li class="offices__dropdown-item">Урал</li>
+            <li class="offices__dropdown-item">Екатеринбург</li>
+            <li class="offices__dropdown-item">Челябинск</li>
+            <li class="offices__dropdown-item">Пермь</li>
+            <li class="offices__dropdown-item">Сургут</li>
+            <li class="offices__dropdown-item">Тюмень</li>
+            <li class="offices__dropdown-item">Ижевск</li>
+          </ul>
+          <ul class="offices__dropdown-list">
+            <li class="offices__dropdown-item">Сибирь</li>
+            <li class="offices__dropdown-item">Новосибирск</li>
+            <li class="offices__dropdown-item">Омск</li>
+            <li class="offices__dropdown-item">Томск</li>
+            <li class="offices__dropdown-item">Красноярск</li>
+            <li class="offices__dropdown-item">Иркутск</li>
+          </ul>
+          <ul class="offices__dropdown-list">
+            <li class="offices__dropdown-item">Дальний Bосток</li>
+            <li class="offices__dropdown-item">Хабаровск</li>
+            <li class="offices__dropdown-item">Владивосток</li>
+          </ul>
+        </div>
+        <div class="offices__map-container">
+          <object type="image/svg+xml" class="offices__map" data="<%=require('./src/images/map.svg')%>"></object>
+        </div>
+      </section>
+      <!--Конец секции Offices -->
+
+      <!-- Начало секции Mission -->
+      <section class="mission">
+        <h2 class="mission__title">Миссия Softline</h2>
+        <p class="mission__text">
+          Мы помогаем организациям трансформироваться, работать эффективно и
+          безопасно в&nbsp;условиях цифровой экономики.
+        </p>
+        <div class="mission__bg mission__bg_left"></div>
+        <div class="mission__bg mission__bg_right"></div>
+      </section>
+      <!-- Конец секции Mission -->
+
+      <!-- Начало секции Direct -->
+      <section class="direct">
+        <h2 class="direct__title">Направления бизнеса</h2>
+        <ul class="direct__card-list">
+          <li class="direct__card-item">
+            <img
+              src="<%=require('./src/images/solutions.png')%>"
+              alt="Решения Softline"
+              class="direct__card-img"
+            />
+            <div class="direct__card-description">
+              <p class="direct__card-subtitle">Решения Softline</p>
+              <p class="direct__card-text">
+                ГК Softline предлагает клиентам собственную линейку оборудования
+                (ПК, серверы, торговое оборудование и проч.), разработку
+                программных продуктов, облачных решений, решений в области
+                информационной безопасности.
+              </p>
+            </div>
+          </li>
+          <li class="direct__card-item">
+            <img
+              src="<%=require('./src/images/safety.png')%>"
+              alt="Кибербезопасность"
+              class="direct__card-img"
+            />
+            <div class="direct__card-description">
+              <p class="direct__card-subtitle">Кибербезопасность</p>
+              <p class="direct__card-text">
+                Softline обладает всеми необходимыми государственными лицензиями
+                для организации проектов по информационной безопасности и
+                аттестации.
+              </p>
+            </div>
+          </li>
+          <li class="direct__card-item">
+            <img
+              src="<%=require('./src/images/import-replace.png')%>"
+              alt="Импортозамещение"
+              class="direct__card-img"
+            />
+            <div class="direct__card-description">
+              <p class="direct__card-subtitle">Импортозамещение</p>
+              <p class="direct__card-text">
+                ГК Softline обладает широчайшим портфелем решений и услуг для
+                импортозамещения, включая ПО и оборудование собственного
+                производства.
+              </p>
+            </div>
+          </li>
+          <li class="direct__card-item">
+            <img
+              src="<%=require('./src/images/cloud-solutions.png')%>"
+              alt="Облачные решения"
+              class="direct__card-img"
+            />
+            <div class="direct__card-description">
+              <p class="direct__card-subtitle">Облачные решения</p>
+              <p class="direct__card-text">
+                Softline использует современные облачные решения как российских,
+                так и международных вендоров для масштабирования бизнеса своих
+                клиентов. Подписки, услуги, трансформация.
+              </p>
+            </div>
+          </li>
+          <li class="direct__card-item">
+            <img
+              src="<%=require('./src/images/development.png')%>"
+              alt="Цифровая трансформация и разработка ПО"
+              class="direct__card-img"
+            />
+            <div class="direct__card-description">
+              <p class="direct__card-subtitle">
+                Цифровая трансформация и&nbsp;разработка ПО
+              </p>
+              <p class="direct__card-text">
+                Softline использует современные технологи и новые возможности
+                для увеличения производительности бизнеса заказчика. В штате ГК
+                Softline -&nbsp;2000+ разработчиков, которые трансформируют ПО
+                под нужды конкретного предприятия.
+              </p>
+            </div>
+          </li>
+          <li class="direct__card-item">
+            <img
+              src="<%=require('./src/images/support.png')%>"
+              alt="Техническая поддержка Softline"
+              class="direct__card-img"
+            />
+            <div class="direct__card-description">
+              <p class="direct__card-subtitle">
+                Техническая поддержка Softline
+              </p>
+              <p class="direct__card-text">
+                200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев в
+                году, сервисное партнерство с 30+ мировыми производителями.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Конец секции Direct -->
+
+      <!-- Начало блока Benefits -->
+      <section class="benefits">
+        <h2 class="benefits__title">Компенсационный пакет</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <p class="benefits__img-wrap">
+              <img src="<%=require('./src/images/dms.svg')%>" alt="ДМС" class="benefits__img" />
+            </p>
+            <p class="benefits__text">ДМС</p>
+          </li>
+          <li class="benefits__item">
+            <p class="benefits__img-wrap">
+              <img
+                src="<%=require('./src/images/birthday.svg')%>"
+                alt="Выходной в день рождения"
+                class="benefits__img"
+              />
+            </p>
+            <p class="benefits__text">Выходной в&nbsp;день&nbsp;рождения</p>
+          </li>
+          <li class="benefits__item">
+            <p class="benefits__img-wrap">
+              <img
+                src="<%=require('./src/images/mobile.svg')%>"
+                alt="Корпоративная мобильная связь"
+                class="benefits__img"
+              />
+            </p>
+            <p class="benefits__text">Корпоративная мобильная связь</p>
+          </li>
+          <li class="benefits__item">
+            <p class="benefits__img-wrap">
+              <img
+                src="<%=require('./src/images/sport.svg')%>"
+                alt="Корпоративные скидки на спорт"
+                class="benefits__img"
+              />
+            </p>
+            <p class="benefits__text">Корпоративные скидки на спорт</p>
+          </li class="benefits__item">
+          <li class="benefits__item">
+            <p class="benefits__img-wrap">
+              <img src="<%=require('./src/images/lti.svg')%>" alt="LTI" class="benefits__img" />
+            </p>
+            <p class="benefits__text">LTI</p>
+          </li>
+        </ul>
+
+        <hr>
+
+        <p class="benefits__subtitle">
+          Программа дополнительной мотивации
+        </p>
+        <p class="benefits__subtitle benefits__subtitle_accent">доплата 12% от суммы</p>
+
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <p class="benefits__img-wrap">
+              <img src="<%=require('./src/images/tech.svg')%>" alt="Оргтехника" class="benefits__img" />
+            </p>
+            <p class="benefits__text">Оргтехники</p>
+          </li>
+          <li class="benefits__item">
+            <p class="benefits__img-wrap">
+              <img src="<%=require('./src/images/dms.svg')%>" alt="ДМС" class="benefits__img" />
+            </p>
+            <p class="benefits__text">ДМС</p>
+          </li>
+          <li class="benefits__item">
+            <p class="benefits__img-wrap">
+              <img src="<%=require('./src/images/hypothec.svg')%>" alt="Ипотека" class="benefits__img" />
+            </p>
+            <p class="benefits__text">Ипотеки</p>
+          </li>
+        </ul>
+      </section>
+      <!-- Конец блока Benefits -->
+
+      <!-- Начало блока Corporate -->
+      <section class="corporate carousel">
+        <div class="corporate__title-wrap">
+          <h2 class="corporate__title">Корпоративная жизнь</h2>
+          <div class="corporate__image-navigate">
+            <button class="corporate__nav carousel__btn-prev">
+              <img
+                src="<%=require('./src/images/icon-left.svg')%>"
+                class="corporate__nav-img"
+                alt="Прокрутить слайд влево"
+              />
+            </button>
+            <button class="corporate__nav carousel__btn-next">
+              <img
+                src="<%=require('./src/images/icon-right.svg')%>"
+                class="corporate__nav-img"
+                alt="Прокрутить слайд вправо"
+              />
+            </button>
+          </div>
+        </div>
+        <ul class="corporate__slide carousel__list">
+          <li class="carousel__item active">
+            <img src="<%=require('./src/images/slide1.png')%>" alt="Награждение лучших сотрудников" class="carousel__img" />
+          </li>
+          <li class="carousel__item">
+            <img src="<%=require('./src/images/slide2.png')%>" alt="IДень донора в Softline" class="carousel__img" />
+          </li>
+          <li class="carousel__item">
+            <img src="<%=require('./src/images/slide3.png')%>" alt="Мы поддерживаем ЗОЖ" class="carousel__img" />
+          </li>
+          <li class="carousel__item">
+            <img src="<%=require('./src/images/slide4.png')%>" alt="Корпоративный спорт" class="carousel__img" />
+          </li>
+          <li class="carousel__item">
+            <img src="<%=require('./src/images/slide5.png')%>" alt="Фото для конкурса Арбуз-party" class="carousel__img" />
+          </li>
+        </ul>
+        <div class="corporate__slide-count carousel__dots"></div>
+      </section>
+
+      <!-- Конец блока Corporate -->
+    </main>
+    <!-- Конец блока Main -->
+  </body>
+</html>
